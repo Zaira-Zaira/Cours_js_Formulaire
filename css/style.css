@@ -1,0 +1,310 @@
+                        /*reset css*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font:1.6rem sans-serif;
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+h1,h2,h3, ul,li{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+input{
+    border:0;
+}
+a, details, summary{
+    text-decoration: none;
+    color:#222;
+    outline: none;
+}
+
+                        /*theme*/
+
+header h1, section h2{
+    text-align: center; 
+}
+header h1::before{
+    content: '\2605';
+    font-size:3.6rem;
+    margin-right: 0.3rem;
+    color: red;
+}
+section{
+    padding:1.5rem;
+    margin-bottom: 1.0rem;
+    transition: 0.7s;
+}
+section a{
+    max-width: 40rem;
+    margin:1.0rem auto;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+section:nth-child(2), section{
+   max-width: 70.0rem;
+   border: 0.2rem solid transparent;
+   box-shadow: 0 0  0.6rem rgb(1, 77, 77);
+   margin: 3.0rem auto;
+   padding: 2.0rem;
+   border-radius: 0.6rem;
+   /* box-shadow: inset -0.1rem -0.1rem 0.3rem rgb(214, 214, 214); */
+}
+section:nth-child(2) p{
+    display: none;
+    text-align: center;
+    line-height: 5.0rem;
+    font-size: 2.5rem;
+}
+section:nth-child(2):hover{
+    background-color: rgb(238, 237, 237);
+    transition:  all 0.5s ease-in-out;
+}
+section h2::before{
+    content: '\2714';
+    font-size:3.6rem;
+    margin-right: 0.3rem;
+    color: #222;
+}
+form input, form label, section a{
+    display: block;
+    width: 100%;
+    line-height: 3.0rem;
+    border-radius: 0.3rem;
+}
+form input[placeholder="E-mail"],
+form input[placeholder="Mot de passe*"]{
+   color:dimgrey;
+   font-size: 1.6rem;
+}
+label{
+     font-size: 1.5rem;
+     color: rgb(2, 75, 75);
+     transition: all 0.5s ease-in;
+     padding-left: 0;
+}
+input[type="email"], 
+input[type="password"]{
+   margin-bottom: 0.8rem;
+   border: 0.1rem solid rgb(223, 221, 221);
+   background-color: rgb(166, 245, 255); 
+   padding:1.5rem;
+   /* margin-top: 1.0rem; */
+   transition: all 0.5s ease-in;
+   cursor: pointer;
+}
+
+ input:focus{
+   box-shadow: 0.1rem 0.1rem 0.5rem rgb(24, 103, 250);
+}
+input[type="submit"],section a{
+   background-color: rgb(82, 82, 250);
+   border: 0.1rem solid  rgb(4, 112, 221);
+   transition: all 0.3s ease-in;
+   box-shadow: 0 0 0.7rem rgb(138, 136, 136);
+   padding:1.5rem;
+   margin-top: 1.0rem;
+   border-radius: 0.3rem;
+   cursor: pointer;
+}
+input[type="submit"]:hover{
+   box-shadow: 0.1rem 0.1rem 0.5rem rgb(0, 63, 63); 
+   /* transform: translate(0.2rem); */
+   color:#fff;
+   background-color: rgb(3, 109, 109);
+   border: 0.1rem solid transparent;
+}
+footer{
+    background-color: transparent;
+    margin: 2.0rem auto;
+    box-shadow: none;
+}
+footer *{
+    text-align: center;
+}
+.warning{
+    background-color: red;
+    color:#fff;
+}
+.success{
+    background-color:rgb(3, 129, 3);
+    color:#fff;
+    width: 100%;
+}
+/*.form{
+    display: none;
+}*/
+
+
+                  /*******************************************/
+section .checked::before{
+    cursor: pointer;
+    color:rgb(0,200,0);
+}
+main .form{
+    height: 0;
+    overflow: hidden;
+    box-shadow: none;
+    background: 0;
+    opacity: 0;
+    transition-duration: 0.8s;
+}
+main .appear{
+    height: initial;
+    overflow: visible;
+    box-shadow:  0 0 1.0rem #ccc;
+    background-color: #fafafa;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*h1,h2,p, ul, li{
+    margin:0;
+    padding:1.0rem;
+    list-style:none;
+    font-weight: 100;
+}
+h1, p, ul , li, h3{
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+  main img{
+     margin: 5.0rem auto;
+     text-align: center;
+ }
+ */
+
+/*theme button*/
+/*.btn-default{
+    display: block;
+    line-height: 3.5rem;
+    padding:1.0rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    background-color: #CCC;
+    max-width: 20rem;
+    margin: 0 auto;
+    transition-duration: 0.9s;   /*changer la couleur
+} */
+/*.btn-alert{ /*activer le button
+    background-color: rgba(200,0,0,1);
+    color:#fff;
+}*/
+ /*.article-remove{
+    max-width: 40rem;
+    background-color:#222;
+    margin: 1.0rem auto;
+    padding: 1.0rem;
+    transform: translateX(-100rem);
+    transition-duration:0.5s;
+}
+/*faire venir le block*/
+
+/*main section p{
+    font-size: initial;
+    text-align: left;
+    max-width: 40rem;
+    padding: 1.5rem;
+}
+ main section h2{
+    text-align: center;
+    color:#fff;
+    background-color: #333;
+    align-items: center;
+    padding: 0.5rem;
+    padding: 0.5rem;
+}
+.article-alert{
+    text-align: center;
+    margin: 3.5rem auto;
+    padding: 1.0rem;
+    max-width: 40rem;
+    transition-duration: 0.5s;
+    
+}*/
+/*.article-remove{
+    transform: translateX(-100rem);
+    transition-duration:0.5s;
+}*/
+
+/*main img{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    float: center;
+    transition-duration:0.5s;
+}*/
+
+/*.lamp_on{
+    transform: translateX(100rem);
+    transition-duration:0.5s;
+
+
+/*main{
+    border: 0.1rem solid rgb(172, 168, 168);
+    max-width: 73rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+}*/
+/*p{
+    padding: 1.0rem;
+    max-width: 70rem;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(179, 10, 10);
+    margin: 0 auto;
+    box-shadow: 0.2rem rgb(20, 20, 20);
+}
+h2{
+    text-align: center;
+}*/
+
+/*.submit:active{
+    transform: scale(0.95);
+}*/
+ul li{
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
+    border: 1px solid #222;
+    background-color:rgb(8, 209, 209);
+    color:navy;
+    margin-bottom: 0.5rem;
+    font-size: 2.0rem;
+ }
+
